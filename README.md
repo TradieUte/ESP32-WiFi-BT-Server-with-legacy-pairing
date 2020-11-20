@@ -35,3 +35,6 @@ Menuconfig must be run to generate 'sdkconfig', prior to initial build.
 The file 'partitions.csv' holds the ESP32 memory partition definitions and is currently setup for 4MB flash.
 Note the 'framework', 'board_build.partitions' and 'platform_packages' entries in file platform.ini
 
+The 'flash.sh' (Linux) shell script will flash the binary files to /dev/ttyUSB0.
+If using a different port, alter the script. 
+A Windows O/S flash tool is available from https://www.espressif.com/en/products/socs/esp32/resources. The parameters in 'flash.sh' may be used with the tool, excepting the port, which must match that on Windows.
