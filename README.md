@@ -29,6 +29,8 @@ WiFi pswd, "pswd"     - maximum password size 16 chars.
 
 BT Pin, "1234"        - maximum pin size is four chars. (eg "A0z9")
 
+IP address, 192.168.4.1 (currently fixed)
+
 In the ESP32 project, 'sdkconfig.defaults' contain the defines required to build the system. These values override the default values 
 that would normally be placed in 'sdkconfig' by menuconfig ('pio run -t menuconfig' NB, build will fail if window size not large enough).
 Menuconfig must be run to generate 'sdkconfig', prior to initial build.
